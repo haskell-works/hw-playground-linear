@@ -60,8 +60,6 @@ test-suite hw-playground-linear-test
   type:                 exitcode-stdio-1.0
   main-is:              Spec.hs
   other-modules:        HaskellWorks.Playground.LinearSpec
-                        Paths_hw_playground_linear
-  autogen-modules:      Paths_hw_playground_linear
   build-depends:        hw-playground-linear
   hs-source-dirs:       test
   ghc-options:          -threaded -rtsopts -with-rtsopts=-N
