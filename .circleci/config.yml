@@ -46,8 +46,8 @@ workflows:
                   apt install -y libblas3 liblapack3 libblas-dev liblapack-dev
 
       - haskell/build-with-binary-cache:
-          name: GHC 8.10.1
-          executor: haskell/ghc-8_10_1
+          name: GHC 8.10.2
+          executor: haskell/ghc-8_10_2
           context: haskell-ci
           binary-cache-uri: ${BINARY_CACHE_URI-"http://hw-binary-cache-us-west-2-a.s3-website-us-west-2.amazonaws.com/archive"}
           after-checkout:
@@ -63,7 +63,7 @@ workflows:
             - GHC 8.4.4
             - GHC 8.6.5
             - GHC 8.8.3
-            - GHC 8.10.1
+            - GHC 8.10.2
 
       # - github/release-cabal:
       #     name: GitHub Release
